@@ -7072,7 +7072,7 @@ var TextModule = function (_Component) {
           styles = _props.styles;
 
       console.log('reup');
-      var render = (0, _reactHtmlParser2.default)(module.text, { tranform: addStyle });
+      var render = (0, _reactHtmlParser2.default)(module.text, { transform: addStyle });
       return _react2.default.createElement(
         'div',
         { style: _extends({}, styles.spacing.modules, { padding: '0 10%' }) },
@@ -7089,7 +7089,9 @@ TextModule.propTypes = {
 };
 
 function addStyle(node) {
-  console.log(node);
+  if (node.type === 'tag') {
+    console.log(node);
+  }
 }
 
 exports.default = TextModule;

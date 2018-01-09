@@ -7,7 +7,7 @@ class TextModule extends Component {
   render() {
     const { module, styles } = this.props;
     console.log('reup')
-    const render = ReactHtmlParser(module.text, { tranform: addStyle });
+    const render = ReactHtmlParser(module.text, { transform: addStyle });
     return (
       <div style={{ ...styles.spacing.modules, ...{ padding: '0 10%' }}}>
         {render}
@@ -21,7 +21,9 @@ TextModule.propTypes = {
 };
 
 function addStyle(node) {
-  console.log(node)
+  if (node.type === 'tag') {
+    console.log(node)
+  }
 }
 
 export default TextModule;
