@@ -7065,18 +7065,13 @@ var TextModule = function (_Component) {
   }
 
   _createClass(TextModule, [{
-    key: 'addStyle',
-    value: function addStyle(node) {
-      console.log(node);
-    }
-  }, {
     key: 'render',
     value: function render() {
       var _props = this.props,
           module = _props.module,
           styles = _props.styles;
 
-      var render = (0, _reactHtmlParser2.default)(module.text, { tranform: this.addStyle });
+      var render = (0, _reactHtmlParser2.default)(module.text, { tranform: addStyle });
       return _react2.default.createElement(
         'div',
         { style: _extends({}, styles.spacing.modules, { padding: '0 10%' }) },
@@ -7091,6 +7086,10 @@ var TextModule = function (_Component) {
 TextModule.propTypes = {
   module: _propTypes2.default.object
 };
+
+function addStyle(node) {
+  console.log(node);
+}
 
 exports.default = TextModule;
 

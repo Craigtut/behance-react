@@ -3,12 +3,10 @@ import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 
 class TextModule extends Component {
-  addStyle(node) {
-    console.log(node)
-  }
+
   render() {
     const { module, styles } = this.props;
-    const render = ReactHtmlParser(module.text, { tranform: this.addStyle });
+    const render = ReactHtmlParser(module.text, { tranform: addStyle });
     return (
       <div style={{ ...styles.spacing.modules, ...{ padding: '0 10%' }}}>
         {render}
@@ -20,5 +18,9 @@ class TextModule extends Component {
 TextModule.propTypes = {
   module: PropTypes.object,
 };
+
+function addStyle(node) {
+  console.log(node)
+}
 
 export default TextModule;
