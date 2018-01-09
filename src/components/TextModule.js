@@ -1,13 +1,19 @@
-import { h, Component } from 'preact';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ReactHtmlParser from 'react-html-parser';
 
 class TextModule extends Component {
+  addStyle(node) {
+    if (node.type === 'tag') {
+      console.log(node)
+    }
+  }
   render() {
     const { module, styles } = this.props;
-    console.log(module)
+    const render = ReactHtmlParser(module.text, { tranform: this.addStyle });
     return (
-      <div style={styles.spacing.modules}>
-        Text Module
+      <div style={{ ...styles.spacing.modules, ...{ padding: '0 10%' }}}>
+        {render}
       </div>
     );
   }

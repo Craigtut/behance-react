@@ -1,4 +1,4 @@
-import { h, Component } from 'preact';
+import React, { Component } from 'react';
 import ImageModule from './components/ImageModule';
 import TextModule from './components/TextModule';
 import VideoModule from './components/VideoModule';

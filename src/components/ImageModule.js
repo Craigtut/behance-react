@@ -1,6 +1,5 @@
-import { h, Component } from 'preact';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Container from 'react-grid-system';
 
 class ImageModule extends Component {
   render() {
@@ -8,15 +7,15 @@ class ImageModule extends Component {
     console.log(module)
     if (module.full_bleed) {
       return (
-        <Container fluid style={styles.spacing.modules}>
+        <div fluid style={styles.spacing.modules}>
           <img src={module.sizes.max_1920} style={{ width: '100%' }} />
-        </Container>
+        </div>
       );
     }
     return (
-      <Container style={styles.spacing.modules}>
+      <div style={{ ...styles.spacing.modules, ...{ padding: '0 10%' }}}>
         <img src={module.sizes.max_1920} style={{ width: '100%' }} />
-      </Container>
+      </div>
     );
   }
 }
