@@ -4,9 +4,7 @@ import ReactHtmlParser from 'react-html-parser';
 
 class TextModule extends Component {
   addStyle(node) {
-    if (node.type === 'tag') {
-      console.log(node)
-    }
+    console.log(node)
   }
   render() {
     const { module, styles } = this.props;

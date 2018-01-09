@@ -7067,9 +7067,7 @@ var TextModule = function (_Component) {
   _createClass(TextModule, [{
     key: 'addStyle',
     value: function addStyle(node) {
-      if (node.type === 'tag') {
-        console.log(node);
-      }
+      console.log(node);
     }
   }, {
     key: 'render',
