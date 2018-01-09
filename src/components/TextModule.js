@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { transformHtml } from 'helpers';
+import { transformHtml } from '../helpers';
 
 
 class TextModule extends Component {
