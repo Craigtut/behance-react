@@ -7,7 +7,7 @@ class TextModule extends Component {
   addStyle(node, index) {
     if (node.type === 'tag' && Object.getOwnPropertyNames(node.attribs).length > 0) {
       const nodeClass = transformClassnames(node.attribs.class); // could be undefined
-      const reactNode = convertNodeToElement(node, index, transform);
+      const reactNode = convertNodeToElement(node, index, this.addStyle);
       console.log(reactNode)
       reactNode.style = { ...reactNode.style, ...this.styles.text[nodeClass]};
       return reactNode;
