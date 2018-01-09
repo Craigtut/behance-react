@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { reactifyStyles } from './helpers.js';
 import ImageModule from './components/ImageModule';
 import TextModule from './components/TextModule';
 import VideoModule from './components/VideoModule';
@@ -26,20 +27,3 @@ export function renderProject(project) {
   );
 }
 
-function reactifyStyles(styles) {
-  const newObject = {};
-  for (var key in styles) {
-    if (styles[key] !== null && typeof(styles[key])=="object") {
-      newObject[key] = reactifyStyles(styles[key]);
-    } else {
-      newObject[underscoreToCamelcase(key)] = styles[key];
-    }
-  }
-  return newObject;
-}
-
-function underscoreToCamelcase(str) {
-  return str.replace(/(\_\w)/g, function(m){
-      return m[1].toUpperCase();
-  });
-}

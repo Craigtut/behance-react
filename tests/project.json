@@ -1,0 +1,718 @@
+{
+    "id": 40792189,
+    "name": "Pedal",
+    "published_on": 1468897836,
+    "created_on": 1468897831,
+    "modified_on": 1505504353,
+    "url": "https:\/\/www.behance.net\/gallery\/40792189\/Pedal",
+    "privacy": "public",
+    "fields": [
+      "UI\/UX",
+      "Creative Direction",
+      "Product Design"
+    ],
+    "covers": {
+      "404": "https:\/\/mir-s3-cdn-cf.behance.net\/projects\/404\/ae5c9840792189.Y3JvcCwxMjIxLDk1Niw5OSw5.jpg",
+      "202": "https:\/\/mir-s3-cdn-cf.behance.net\/projects\/202\/ae5c9840792189.Y3JvcCwxMjIxLDk1Niw5OSw5.jpg",
+      "230": "https:\/\/mir-s3-cdn-cf.behance.net\/projects\/230\/ae5c9840792189.Y3JvcCwxMjIxLDk1Niw5OSw5.jpg",
+      "115": "https:\/\/mir-s3-cdn-cf.behance.net\/projects\/115\/ae5c9840792189.Y3JvcCwxMjIxLDk1Niw5OSw5.jpg",
+      "original": "https:\/\/mir-s3-cdn-cf.behance.net\/projects\/original\/ae5c9840792189.Y3JvcCwxMjIxLDk1Niw5OSw5.jpg"
+    },
+    "mature_content": 0,
+    "mature_access": "allowed",
+    "owners": [
+      {
+        "id": 7168409,
+        "first_name": "Craig",
+        "last_name": "Tuttle",
+        "username": "craigtut",
+        "city": "Los Angeles",
+        "state": "California",
+        "country": "United States",
+        "location": "Los Angeles, CA, USA",
+        "company": "Gin + Tonic",
+        "occupation": "Creative Director",
+        "created_on": 1406402889,
+        "url": "https:\/\/www.behance.net\/craigtut",
+        "images": {
+          "50": "https:\/\/mir-s3-cdn-cf.behance.net\/user\/50\/0c18077168409.586eff2222014.jpeg",
+          "100": "https:\/\/mir-s3-cdn-cf.behance.net\/user\/100\/0c18077168409.586eff2222014.jpeg",
+          "115": "https:\/\/mir-s3-cdn-cf.behance.net\/user\/115\/0c18077168409.586eff2222014.jpeg",
+          "230": "https:\/\/mir-s3-cdn-cf.behance.net\/user\/230\/0c18077168409.586eff2222014.jpeg",
+          "138": "https:\/\/mir-s3-cdn-cf.behance.net\/user\/138\/0c18077168409.586eff2222014.jpeg",
+          "276": "https:\/\/mir-s3-cdn-cf.behance.net\/user\/276\/0c18077168409.586eff2222014.jpeg"
+        },
+        "display_name": "Craig Tuttle",
+        "fields": [
+          "UI\/UX",
+          "Creative Direction",
+          "Branding"
+        ],
+        "has_default_image": 0,
+        "website": "www.craigtut.com",
+        "stats": {
+          "followers": 24,
+          "following": 3,
+          "appreciations": 69,
+          "views": 1231,
+          "comments": 0
+        }
+      }
+    ],
+    "stats": {
+      "views": 371,
+      "appreciations": 15,
+      "comments": 3
+    },
+    "conceived_on": 1446336000,
+    "canvas_width": 1400,
+    "tags": [
+      "Adobe Portfolio",
+      "pedal",
+      "RidePedal",
+      "pedicab",
+      "pedicabs",
+      "Rickshaw",
+      "urban transport"
+    ],
+    "description": "Pedal is an urban transportation brand that connects users and Pedal (pedicab) drivers through a seamless mobile application platform.",
+    "editor_version": 5,
+    "allow_comments": 1,
+    "modules": [
+      {
+        "id": 247860967,
+        "project_id": 40792189,
+        "type": "image",
+        "full_bleed": 1,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "src": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/3a12d240792189.5797269d64455.jpg",
+        "sizes": {
+          "disp": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/3a12d240792189.5797269d64455.jpg",
+          "max_1240": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/hd\/3a12d240792189.5797269d64455.jpg",
+          "max_1920": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/fs\/3a12d240792189.5797269d64455.jpg",
+          "max_1200": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/max_1200\/3a12d240792189.5797269d64455.jpg",
+          "1400": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/1400\/3a12d240792189.5797269d64455.jpg",
+          "original": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/source\/3a12d240792189.5797269d64455.jpg"
+        },
+        "dimensions": {
+          "disp": {
+            "width": 600,
+            "height": 469
+          },
+          "max_1240": {
+            "width": 1240,
+            "height": 969
+          },
+          "max_1920": {
+            "width": 1920,
+            "height": 1500
+          },
+          "max_1200": {
+            "width": 1200,
+            "height": 938
+          },
+          "1400": {
+            "width": 1400,
+            "height": 1094
+          },
+          "original": {
+            "width": 1920,
+            "height": 1500
+          }
+        },
+        "width": 600,
+        "height": 468
+      },
+      {
+        "id": 246499697,
+        "project_id": 40792189,
+        "type": "text",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "text": "<div data-class-portfolio=\"title\" data-style-portfolio=\"text-align:center;\" style=\"text-align:center;\" class=\"title\"><br><\/div><div data-class-portfolio=\"title\" data-style-portfolio=\"text-align:center;\" style=\"text-align:center;\" class=\"title\"><span style=\"font-family:arial;\"><span style=\"font-size:36px;\"><span style=\"color:#00C6C1;\">Pedal - Rethink \u00a0Your Ride<\/span><\/span><\/span><\/div><div data-class-portfolio=\"title\" data-style-portfolio=\"text-align:center;\" style=\"text-align:center;\" class=\"sub-title\"><span style=\"font-size:20px;\"><span style=\"font-family:arial;\"><span style=\"color:#00C6C1;\">Product Design, Branding,\u00a0UI\/UX<\/span><\/span><\/span><\/div><div data-class-portfolio=\"title\" data-style-portfolio=\"text-align:center;\" style=\"text-align:center;\" class=\"title\"><br><\/div>",
+        "text_plain": "Pedal - Rethink \u00a0Your RideProduct Design, Branding,\u00a0UI\/UX"
+      },
+      {
+        "id": 247607355,
+        "project_id": 40792189,
+        "type": "text",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "text": "<div data-class-portfolio=\"main-text\" class=\"main-text\">Pedal is a company seeking to build\u00a0eco-conscious, alternative forms of transit to reconnect people with their cities.\u00a0Pedicabs create a community conducive to exploration, awareness, and general well\u00a0being. Cars\u00a0in cities simply aren\u2019t the most efficient or fun means of getting where you need to go. With Pedal you can easily order a pedicab to pick you up and take you to wherever you\u2019re going.<\/div>",
+        "text_plain": "Pedal is a company seeking to build\u00a0eco-conscious, alternative forms of transit to reconnect people with their cities.\u00a0Pedicabs create a community conducive to exploration, awareness, and general well\u00a0being. Cars\u00a0in cities simply aren\u2019t the most efficient or fun means of getting where you need to go. With Pedal you can easily order a pedicab to pick you up and take you to wherever you\u2019re going."
+      },
+      {
+        "id": 247860963,
+        "project_id": 40792189,
+        "type": "text",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "text": "<div class=\"title\"><br><\/div><div class=\"title\"><span style=\"font-size:48px;\">1.<\/span> Branding<\/div><div class=\"title\"><br><\/div>",
+        "text_plain": "1. Branding"
+      },
+      {
+        "id": 247860969,
+        "project_id": 40792189,
+        "type": "image",
+        "full_bleed": 1,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "src": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/8175a340792189.5797269d64b29.jpg",
+        "sizes": {
+          "disp": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/8175a340792189.5797269d64b29.jpg",
+          "max_1240": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/hd\/8175a340792189.5797269d64b29.jpg",
+          "max_1920": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/fs\/8175a340792189.5797269d64b29.jpg",
+          "max_1200": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/max_1200\/8175a340792189.5797269d64b29.jpg",
+          "1400": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/1400\/8175a340792189.5797269d64b29.jpg",
+          "original": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/source\/8175a340792189.5797269d64b29.jpg"
+        },
+        "dimensions": {
+          "disp": {
+            "width": 600,
+            "height": 420
+          },
+          "max_1240": {
+            "width": 1240,
+            "height": 867
+          },
+          "max_1920": {
+            "width": 1440,
+            "height": 1007
+          },
+          "max_1200": {
+            "width": 1200,
+            "height": 839
+          },
+          "1400": {
+            "width": 1400,
+            "height": 979
+          },
+          "original": {
+            "width": 1440,
+            "height": 1007
+          }
+        },
+        "width": 600,
+        "height": 419
+      },
+      {
+        "id": 247860971,
+        "project_id": 40792189,
+        "type": "image",
+        "full_bleed": 1,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "src": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/46c17f40792189.5797269d652d1.jpg",
+        "sizes": {
+          "disp": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/46c17f40792189.5797269d652d1.jpg",
+          "max_1240": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/hd\/46c17f40792189.5797269d652d1.jpg",
+          "max_1920": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/fs\/46c17f40792189.5797269d652d1.jpg",
+          "max_1200": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/max_1200\/46c17f40792189.5797269d652d1.jpg",
+          "1400": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/1400\/46c17f40792189.5797269d652d1.jpg",
+          "original": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/source\/46c17f40792189.5797269d652d1.jpg"
+        },
+        "dimensions": {
+          "disp": {
+            "width": 600,
+            "height": 427
+          },
+          "max_1240": {
+            "width": 1240,
+            "height": 882
+          },
+          "max_1920": {
+            "width": 1440,
+            "height": 1024
+          },
+          "max_1200": {
+            "width": 1200,
+            "height": 853
+          },
+          "1400": {
+            "width": 1400,
+            "height": 996
+          },
+          "original": {
+            "width": 1440,
+            "height": 1024
+          }
+        },
+        "width": 600,
+        "height": 426
+      },
+      {
+        "id": 247860973,
+        "project_id": 40792189,
+        "type": "image",
+        "full_bleed": 1,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "src": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/7ac06b40792189.5797269d659c9.jpg",
+        "sizes": {
+          "disp": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/7ac06b40792189.5797269d659c9.jpg",
+          "max_1240": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/hd\/7ac06b40792189.5797269d659c9.jpg",
+          "max_1920": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/fs\/7ac06b40792189.5797269d659c9.jpg",
+          "max_1200": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/max_1200\/7ac06b40792189.5797269d659c9.jpg",
+          "1400": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/1400\/7ac06b40792189.5797269d659c9.jpg",
+          "original": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/source\/7ac06b40792189.5797269d659c9.jpg"
+        },
+        "dimensions": {
+          "disp": {
+            "width": 600,
+            "height": 533
+          },
+          "max_1240": {
+            "width": 1240,
+            "height": 1101
+          },
+          "max_1920": {
+            "width": 1440,
+            "height": 1278
+          },
+          "max_1200": {
+            "width": 1200,
+            "height": 1065
+          },
+          "1400": {
+            "width": 1400,
+            "height": 1243
+          },
+          "original": {
+            "width": 1440,
+            "height": 1278
+          }
+        },
+        "width": 600,
+        "height": 532
+      },
+      {
+        "id": 248527663,
+        "project_id": 40792189,
+        "type": "text",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "text": "<div class=\"title\"><br><\/div><div class=\"title\"><span style=\"font-size: 56px;\">2.<\/span><span style=\"font-size: 48px;\">\u00a0<\/span>Product Design<\/div><div class=\"title\"><br><\/div>",
+        "text_plain": "2.\u00a0Product Design"
+      },
+      {
+        "id": 248527665,
+        "project_id": 40792189,
+        "type": "text",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "text": "<div>The core idea of Pedal is quite simple: take the on demand ride model that Uber and Lyft have introduced and apply it to an outdated market that has lagged behind technology for far too long. In 2011, Uber expanded their services to Pedicabs in Austin TX. However, the biggest problem is that the Pedicab industry is VERY different than the taxi cab industry. You can't just apply the exact same model directly to it.<\/div><div><br><\/div><div>Through pedal's strategic partners in the Pedicab industry, many riders and fleet owners were interviewed in order to understand the intricacies of the Pedicab market before beginning to design the technology that would power the on demand ride service.<\/div>",
+        "text_plain": "The core idea of Pedal is quite simple: take the on demand ride model that Uber and Lyft have introduced and apply it to an outdated market that has lagged behind technology for far too long. In 2011, Uber expanded their services to Pedicabs in Austin TX. However, the biggest problem is that the Pedicab industry is VERY different than the taxi cab industry. You can't just apply the exact same model directly to it.Through pedal's strategic partners in the Pedicab industry, many riders and fleet owners were interviewed in order to understand the intricacies of the Pedicab market before beginning to design the technology that would power the on demand ride service."
+      },
+      {
+        "id": 248518923,
+        "project_id": 40792189,
+        "type": "text",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "text": "<div class=\"title\"><br><\/div><div class=\"title\"><span style=\"font-size: 56px;\">3.<\/span><span style=\"font-size: 48px;\">\u00a0<\/span><span style=\"font-size: 36px;\">User Experience Design<\/span><\/div><div class=\"title\"><br><\/div>",
+        "text_plain": "3.\u00a0User Experience Design"
+      },
+      {
+        "id": 248527671,
+        "project_id": 40792189,
+        "type": "image",
+        "full_bleed": 1,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "src": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/a2ac3c40792189.579b28ab1d3f0.jpg",
+        "sizes": {
+          "disp": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/a2ac3c40792189.579b28ab1d3f0.jpg",
+          "max_1240": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/hd\/a2ac3c40792189.579b28ab1d3f0.jpg",
+          "max_1920": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/fs\/a2ac3c40792189.579b28ab1d3f0.jpg",
+          "max_1200": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/max_1200\/a2ac3c40792189.579b28ab1d3f0.jpg",
+          "1400": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/1400\/a2ac3c40792189.579b28ab1d3f0.jpg",
+          "original": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/source\/a2ac3c40792189.579b28ab1d3f0.jpg"
+        },
+        "dimensions": {
+          "disp": {
+            "width": 600,
+            "height": 400
+          },
+          "max_1240": {
+            "width": 1240,
+            "height": 827
+          },
+          "max_1920": {
+            "width": 1920,
+            "height": 1280
+          },
+          "max_1200": {
+            "width": 1200,
+            "height": 800
+          },
+          "1400": {
+            "width": 1400,
+            "height": 933
+          },
+          "original": {
+            "width": 1920,
+            "height": 1280
+          }
+        },
+        "width": 600,
+        "height": 400
+      },
+      {
+        "id": 248527675,
+        "project_id": 40792189,
+        "type": "image",
+        "full_bleed": 1,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "src": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/225c7040792189.579b28ab1da6d.jpg",
+        "sizes": {
+          "disp": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/225c7040792189.579b28ab1da6d.jpg",
+          "max_1240": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/hd\/225c7040792189.579b28ab1da6d.jpg",
+          "max_1920": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/fs\/225c7040792189.579b28ab1da6d.jpg",
+          "max_1200": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/max_1200\/225c7040792189.579b28ab1da6d.jpg",
+          "1400": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/1400\/225c7040792189.579b28ab1da6d.jpg",
+          "max_3840": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/max_3840\/225c7040792189.579b28ab1da6d.jpg",
+          "original": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/source\/225c7040792189.579b28ab1da6d.jpg"
+        },
+        "dimensions": {
+          "disp": {
+            "width": 600,
+            "height": 353
+          },
+          "max_1240": {
+            "width": 1240,
+            "height": 729
+          },
+          "max_1920": {
+            "width": 1920,
+            "height": 1129
+          },
+          "max_1200": {
+            "width": 1200,
+            "height": 706
+          },
+          "1400": {
+            "width": 1400,
+            "height": 824
+          },
+          "max_3840": {
+            "width": 3400,
+            "height": 2000
+          },
+          "original": {
+            "width": 3400,
+            "height": 2000
+          }
+        },
+        "width": 600,
+        "height": 352
+      },
+      {
+        "id": 248527667,
+        "project_id": 40792189,
+        "type": "text",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "text": "<div class=\"title\"><br><\/div><div class=\"title\"><span style=\"font-size:48px;\"><span style=\"font-size:56px;\">4. <span style=\"font-size:36px;\">user interface design<\/span><\/span><\/span><\/div><div class=\"title\"><br><\/div>",
+        "text_plain": "4. user interface design"
+      },
+      {
+        "id": 248534379,
+        "project_id": 40792189,
+        "type": "image",
+        "full_bleed": 1,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "src": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/840c7040792189.579b36ddb1629.jpg",
+        "sizes": {
+          "disp": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/840c7040792189.579b36ddb1629.jpg",
+          "max_1240": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/hd\/840c7040792189.579b36ddb1629.jpg",
+          "max_1920": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/fs\/840c7040792189.579b36ddb1629.jpg",
+          "max_1200": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/max_1200\/840c7040792189.579b36ddb1629.jpg",
+          "1400": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/1400\/840c7040792189.579b36ddb1629.jpg",
+          "original": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/source\/840c7040792189.579b36ddb1629.jpg"
+        },
+        "dimensions": {
+          "disp": {
+            "width": 600,
+            "height": 338
+          },
+          "max_1240": {
+            "width": 1240,
+            "height": 698
+          },
+          "max_1920": {
+            "width": 1920,
+            "height": 1080
+          },
+          "max_1200": {
+            "width": 1200,
+            "height": 675
+          },
+          "1400": {
+            "width": 1400,
+            "height": 788
+          },
+          "original": {
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "width": 600,
+        "height": 337
+      },
+      {
+        "id": 248534383,
+        "project_id": 40792189,
+        "type": "image",
+        "full_bleed": 1,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "src": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/c3220140792189.579b36ddb1d53.jpg",
+        "sizes": {
+          "disp": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/c3220140792189.579b36ddb1d53.jpg",
+          "max_1240": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/hd\/c3220140792189.579b36ddb1d53.jpg",
+          "max_1920": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/fs\/c3220140792189.579b36ddb1d53.jpg",
+          "max_1200": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/max_1200\/c3220140792189.579b36ddb1d53.jpg",
+          "1400": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/1400\/c3220140792189.579b36ddb1d53.jpg",
+          "original": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/source\/c3220140792189.579b36ddb1d53.jpg"
+        },
+        "dimensions": {
+          "disp": {
+            "width": 600,
+            "height": 675
+          },
+          "max_1240": {
+            "width": 1240,
+            "height": 1395
+          },
+          "max_1920": {
+            "width": 1920,
+            "height": 2160
+          },
+          "max_1200": {
+            "width": 1200,
+            "height": 1350
+          },
+          "1400": {
+            "width": 1400,
+            "height": 1575
+          },
+          "original": {
+            "width": 1920,
+            "height": 2160
+          }
+        },
+        "width": 600,
+        "height": 675
+      },
+      {
+        "id": 247860965,
+        "project_id": 40792189,
+        "type": "text",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "text": "<div class=\"title\"><br><\/div><div class=\"title\"><span style=\"font-size:56px;\">5. <span style=\"font-size:36px;\">Marketing<\/span><\/span><\/div><div class=\"title\"><br><\/div>",
+        "text_plain": "5. Marketing"
+      },
+      {
+        "id": 264557935,
+        "project_id": 40792189,
+        "type": "image",
+        "full_bleed": 1,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "src": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/4002e140792189.58066f8874439.jpg",
+        "sizes": {
+          "disp": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/disp\/4002e140792189.58066f8874439.jpg",
+          "max_1240": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/hd\/4002e140792189.58066f8874439.jpg",
+          "max_1920": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/fs\/4002e140792189.58066f8874439.jpg",
+          "max_1200": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/max_1200\/4002e140792189.58066f8874439.jpg",
+          "1400": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/1400\/4002e140792189.58066f8874439.jpg",
+          "original": "https:\/\/mir-s3-cdn-cf.behance.net\/project_modules\/source\/4002e140792189.58066f8874439.jpg"
+        },
+        "dimensions": {
+          "disp": {
+            "width": 600,
+            "height": 987
+          },
+          "max_1240": {
+            "width": 1240,
+            "height": 2040
+          },
+          "max_1920": {
+            "width": 1440,
+            "height": 2369
+          },
+          "max_1200": {
+            "width": 1200,
+            "height": 1974
+          },
+          "1400": {
+            "width": 1400,
+            "height": 2303
+          },
+          "original": {
+            "width": 1440,
+            "height": 2369
+          }
+        },
+        "width": 600,
+        "height": 987
+      },
+      {
+        "id": 334535287,
+        "project_id": 40792189,
+        "type": "text",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "text": "<div><br><\/div><div><br><\/div><div><br><\/div><div><br><\/div>",
+        "text_plain": ""
+      },
+      {
+        "id": 334535289,
+        "project_id": 40792189,
+        "type": "embed",
+        "full_bleed": 1,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "embed": "<iframe src=\"https:\/\/player.vimeo.com\/video\/182144505?title=0&amp;byline=0&amp;portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen><\/iframe>",
+        "original_embed": "<iframe src=\"https:\/\/player.vimeo.com\/video\/182144505?title=0&amp;byline=0&amp;portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen><\/iframe>",
+        "width": 600,
+        "height": 338,
+        "original_width": 640,
+        "original_height": 360,
+        "width_unit": "px"
+      },
+      {
+        "id": 248535439,
+        "project_id": 40792189,
+        "type": "text",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "text": "<div><br><\/div><div><br><\/div><div>This short digital animation was shown on TV screens that ran 10 second ads on the back of pedicabs in Denver, CO.<\/div><div><br><\/div><div><br><\/div>",
+        "text_plain": "This short digital animation was shown on TV screens that ran 10 second ads on the back of pedicabs in Denver, CO."
+      },
+      {
+        "id": 246499695,
+        "project_id": 40792189,
+        "type": "video",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "status": 2,
+        "width": 600,
+        "height": 337,
+        "src": "https:\/\/www.ccv.adobe.com\/v1\/player\/ccv\/HYpsGcrSXxN\/embed",
+        "image_src": "",
+        "embed": "<iframe height=\"337\" width=\"600\" src=\"https:\/\/www.ccv.adobe.com\/v1\/player\/ccv\/HYpsGcrSXxN\/embed?bgcolor=191919\" allowfullscreen style=\"margin: 0px auto; display: block;\"><\/iframe>"
+      },
+      {
+        "id": 248534371,
+        "project_id": 40792189,
+        "type": "text",
+        "full_bleed": 0,
+        "alignment": "center",
+        "caption_alignment": "left",
+        "text": "<div><br><\/div><div><br><\/div><div class=\"title\" style=\"text-align:center;\">Thanks!<br><\/div><div class=\"sub-title\" style=\"text-align: center;\"><span style=\"font-size:12px;\"><br><\/span><\/div><div class=\"sub-title\" style=\"text-align: center;\">And always Remember:<\/div><div class=\"sub-title\" style=\"text-align: center;\">Save a horse, Ride a Pedal<\/div><div class=\"sub-title\" style=\"text-align: center;\"><br><\/div><div class=\"sub-title\" style=\"text-align: center;\"><br><\/div><div><br><\/div><div><br><\/div>",
+        "text_plain": "Thanks!And always Remember:Save a horse, Ride a Pedal"
+      }
+    ],
+    "short_url": "http:\/\/be.net\/gallery\/40792189\/Pedal",
+    "copyright": {
+      "license": "no-use",
+      "description": "No-use",
+      "license_id": 7
+    },
+    "tools": [],
+    "styles": {
+      "text": {
+        "title": {
+          "font_family": "helvetica,arial,sans-serif",
+          "font_weight": "bold",
+          "color": "#00C6C1",
+          "text_align": "left",
+          "line_height": "1.4em",
+          "font_size": "36px",
+          "text_decoration": "none",
+          "font_style": "normal",
+          "display": "inline",
+          "text_transform": "uppercase"
+        },
+        "subtitle": {
+          "font_family": "arial,helvetica,sans-serif",
+          "font_weight": "normal",
+          "color": "#00C6C1",
+          "text_align": "left",
+          "line_height": "1.4em",
+          "font_size": "20px",
+          "text_decoration": "none",
+          "font_style": "normal",
+          "display": "inline",
+          "text_transform": "none"
+        },
+        "paragraph": {
+          "font_family": "arial,helvetica,sans-serif",
+          "font_weight": "normal",
+          "color": "#3D3D3F",
+          "text_align": "left",
+          "line_height": "1.4em",
+          "font_size": "16px",
+          "text_decoration": "none",
+          "font_style": "normal",
+          "display": "inline",
+          "text_transform": "none"
+        },
+        "caption": {
+          "font_family": "arial,helvetica,sans-serif",
+          "font_weight": "normal",
+          "color": "#6B6B6B",
+          "text_align": "left",
+          "line_height": "1.4em",
+          "font_size": "14px",
+          "text_decoration": "none",
+          "font_style": "italic",
+          "display": "block",
+          "text_transform": "none"
+        },
+        "link": {
+          "font_family": "arial,helvetica,sans-serif",
+          "font_weight": "bold",
+          "color": "#00C6C1",
+          "text_align": "left",
+          "line_height": "1.4em",
+          "font_size": "16px",
+          "text_decoration": "none",
+          "font_style": "normal",
+          "display": "inline",
+          "text_transform": "none"
+        }
+      },
+      "background": {
+        "color": "FFFFFF"
+      },
+      "spacing": {
+        "project": {
+          "top_margin": 0
+        },
+        "modules": {
+          "bottom_margin": 0
+        }
+      },
+      "dividers": {
+        "display": "none"
+      }
+    },
+    "creator_id": 7168409
+}

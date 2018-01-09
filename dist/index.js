@@ -7043,9 +7043,7 @@ var _propTypes = __webpack_require__(16);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactHtmlParser = __webpack_require__(75);
-
-var _reactHtmlParser2 = _interopRequireDefault(_reactHtmlParser);
+var _helpers = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"helpers\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -7065,25 +7063,13 @@ var TextModule = function (_Component) {
   }
 
   _createClass(TextModule, [{
-    key: 'addStyle',
-    value: function addStyle(node, index) {
-      if (node.type === 'tag' && Object.getOwnPropertyNames(node.attribs).length > 0) {
-        var nodeClass = transformClassnames(node.attribs.class); // could be undefined
-        var reactNode = (0, _reactHtmlParser.convertNodeToElement)(node, index, this.addStyle);
-        console.log(reactNode);
-        reactNode.style = _extends({}, reactNode.style, this.styles.text[nodeClass]);
-        return reactNode;
-      }
-    }
-  }, {
     key: 'render',
     value: function render() {
       var _props = this.props,
           module = _props.module,
           styles = _props.styles;
 
-      console.log('reup');
-      var render = (0, _reactHtmlParser2.default)(module.text, { transform: this.addStyle });
+      var render = (0, _helpers.transformHtml)(module.text, styles.text);
       return _react2.default.createElement(
         'div',
         { style: _extends({}, styles.spacing.modules, { padding: '0 10%' }) },
@@ -7098,26 +7084,6 @@ var TextModule = function (_Component) {
 TextModule.propTypes = {
   module: _propTypes2.default.object
 };
-
-function isEmptyObject(obj) {
-  for (var prop in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, prop)) {
-      return false;
-    }
-  }
-  return true;
-}
-
-function transformClassnames(className) {
-  switch (className) {
-    case 'main-text':
-      return 'paragraph';
-    case 'sub-title':
-      return 'subtitle';
-    default:
-      return className;
-  }
-}
 
 exports.default = TextModule;
 
@@ -7194,14 +7160,13 @@ exports.default = TextModule;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 exports.renderProject = renderProject;
 
 var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _helpers = __webpack_require__(91);
 
 var _ImageModule = __webpack_require__(37);
 
@@ -7220,7 +7185,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function renderProject(project) {
   console.log('Here is project data', project);
   var modules = project.modules;
-  var processedStyles = reactifyStyles(project.styles);
+  var processedStyles = (0, _helpers.reactifyStyles)(project.styles);
   var modulesToRender = modules.map(function (module) {
     switch (module.type) {
       case 'text':
@@ -7238,24 +7203,6 @@ function renderProject(project) {
     { style: processedStyles.background },
     modulesToRender
   );
-}
-
-function reactifyStyles(styles) {
-  var newObject = {};
-  for (var key in styles) {
-    if (styles[key] !== null && _typeof(styles[key]) == "object") {
-      newObject[key] = reactifyStyles(styles[key]);
-    } else {
-      newObject[underscoreToCamelcase(key)] = styles[key];
-    }
-  }
-  return newObject;
-}
-
-function underscoreToCamelcase(str) {
-  return str.replace(/(\_\w)/g, function (m) {
-    return m[1].toUpperCase();
-  });
 }
 
 /***/ }),
@@ -10923,6 +10870,77 @@ function config (name) {
 /***/ (function(module, exports) {
 
 /* (ignored) */
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.transformHtml = transformHtml;
+exports.reactifyStyles = reactifyStyles;
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactHtmlParser = __webpack_require__(75);
+
+var _reactHtmlParser2 = _interopRequireDefault(_reactHtmlParser);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function transformHtml(html, textStyles) {
+  return (0, _reactHtmlParser2.default)(html, { transform: addStyle });
+
+  function addStyle(node, index) {
+    if (node.type === 'tag' && Object.getOwnPropertyNames(node.attribs).length > 0) {
+      var nodeClass = transformClassnames(node.attribs.class); // could be undefined
+      var reactNode = Object.assign((0, _reactHtmlParser.convertNodeToElement)(node, index));
+      var style = _extends({}, reactNode.props.style, textStyles[nodeClass]);
+      var newStyledNode = _react2.default.cloneElement(reactNode, { style: style });
+      return newStyledNode;
+    }
+  }
+}
+
+function reactifyStyles(styles) {
+  var newObject = {};
+  for (var key in styles) {
+    if (styles[key] !== null && _typeof(styles[key]) == "object") {
+      newObject[key] = reactifyStyles(styles[key]);
+    } else {
+      newObject[underscoreToCamelcase(key)] = styles[key];
+    }
+  }
+  return newObject;
+}
+
+function underscoreToCamelcase(str) {
+  return str.replace(/(\_\w)/g, function (m) {
+    return m[1].toUpperCase();
+  });
+}
+
+function transformClassnames(className) {
+  switch (className) {
+    case 'main-text':
+      return 'paragraph';
+    case 'sub-title':
+      return 'subtitle';
+    default:
+      return className;
+  }
+}
 
 /***/ })
 /******/ ]);
