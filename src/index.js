@@ -21,7 +21,7 @@ export function renderProject(project) {
     }
   });
   return (
-    <div style={processedStyles.background}>
+    <div style={{ background: processedStyles.background.color }}>
       {modulesToRender}
     </div>
   );

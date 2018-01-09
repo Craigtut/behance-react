@@ -7200,7 +7200,7 @@ function renderProject(project) {
   });
   return _react2.default.createElement(
     'div',
-    { style: processedStyles.background },
+    { style: { background: processedStyles.background.color } },
     modulesToRender
   );
 }
