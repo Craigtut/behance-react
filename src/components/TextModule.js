@@ -6,6 +6,7 @@ class TextModule extends Component {
 
   render() {
     const { module, styles } = this.props;
+    console.log('reup')
     const render = ReactHtmlParser(module.text, { tranform: addStyle });
     return (
       <div style={{ ...styles.spacing.modules, ...{ padding: '0 10%' }}}>

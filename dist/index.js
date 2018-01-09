@@ -7071,6 +7071,7 @@ var TextModule = function (_Component) {
           module = _props.module,
           styles = _props.styles;
 
+      console.log('reup');
       var render = (0, _reactHtmlParser2.default)(module.text, { tranform: addStyle });
       return _react2.default.createElement(
         'div',
