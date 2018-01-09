@@ -7065,6 +7065,17 @@ var TextModule = function (_Component) {
   }
 
   _createClass(TextModule, [{
+    key: 'addStyle',
+    value: function addStyle(node, index) {
+      if (node.type === 'tag' && Object.getOwnPropertyNames(node.attribs).length > 0) {
+        var nodeClass = transformClassnames(node.attribs.class); // could be undefined
+        var reactNode = convertNodeToElement(node, index, transform);
+        console.log(reactNode);
+        reactNode.style = _extends({}, reactNode.style, this.styles.text[nodeClass]);
+        return reactNode;
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _props = this.props,
@@ -7072,7 +7083,7 @@ var TextModule = function (_Component) {
           styles = _props.styles;
 
       console.log('reup');
-      var render = (0, _reactHtmlParser2.default)(module.text, { transform: addStyle });
+      var render = (0, _reactHtmlParser2.default)(module.text, { transform: this.addStyle });
       return _react2.default.createElement(
         'div',
         { style: _extends({}, styles.spacing.modules, { padding: '0 10%' }) },
@@ -7088,9 +7099,23 @@ TextModule.propTypes = {
   module: _propTypes2.default.object
 };
 
-function addStyle(node) {
-  if (node.type === 'tag') {
-    console.log(node);
+function isEmptyObject(obj) {
+  for (var prop in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, prop)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function transformClassnames(className) {
+  switch (className) {
+    case 'main-text':
+      return 'paragraph';
+    case 'sub-title':
+      return 'subtitle';
+    default:
+      return className;
   }
 }
 
