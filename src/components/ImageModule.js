@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Container } from 'react-grid-system';
 
 class ImageModule extends Component {
   render() {
@@ -8,15 +9,15 @@ class ImageModule extends Component {
     style.marginBottom = (style.marginBottom === 0) ? '-4px' : style.marginBottom;
     if (module.full_bleed) {
       return (
-        <div fluid style={style}>
+        <Container fluid style={style}>
           <img src={module.sizes.max_1920} style={{ width: '100%' }} />
-        </div>
+        </Container>
       );
     }
     return (
-      <div style={{ ...style, ...{ padding: '0 10%' }}}>
+      <Container style={style}>
         <img src={module.sizes.max_1920} style={{ width: '100%' }} />
-      </div>
+      </Container>
     );
   }
 }

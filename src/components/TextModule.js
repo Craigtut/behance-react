@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { transformHtml } from '../helpers';
+import { Container } from 'react-grid-system';
 
 
 class TextModule extends Component {
@@ -8,9 +9,9 @@ class TextModule extends Component {
     const { module, styles } = this.props;
     const render = transformHtml(module.text, styles.text);
     return (
-      <div style={{ ...styles.spacing.modules, ...{ padding: '0 10%' }}}>
+      <Container style={styles.spacing.modules}>
         {render}
-      </div>
+      </Container>
     );
   }
 }
