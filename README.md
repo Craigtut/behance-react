@@ -22,6 +22,7 @@ Basic Usage
 import { renderProject } from 'behance-react';
 
 class Project extends Component {
+  /* ... something more ... */
   render() {
     const { project } = this.state; // Get behance project data from somewhere
     const projectRender = renderProject(project);
