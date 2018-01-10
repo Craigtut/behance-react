@@ -25,7 +25,10 @@ export function reactifyStyles(styles) {
     if (styles[key] !== null && typeof(styles[key])=="object") {
       newObject[key] = reactifyStyles(styles[key]);
     } else {
-      newObject[underscoreToCamelcase(key)] = styles[key];
+      let newKey = key;
+      if (key === 'bottom_margin' || key === 'top_margin') newKey = key.split('_').reverse().join('_');
+      newKey = underscoreToCamelcase(newKey);
+      newObject[newKey] = styles[key];
     }
   }
   return newObject;

@@ -10924,7 +10924,10 @@ function reactifyStyles(styles) {
     if (styles[key] !== null && _typeof(styles[key]) == "object") {
       newObject[key] = reactifyStyles(styles[key]);
     } else {
-      newObject[underscoreToCamelcase(key)] = styles[key];
+      var newKey = key;
+      if (key === 'bottom_margin' || key === 'top_margin') newKey = key.split('_').reverse().join('_');
+      newKey = underscoreToCamelcase(newKey);
+      newObject[newKey] = styles[key];
     }
   }
   return newObject;
