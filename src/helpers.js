@@ -6,9 +6,9 @@ export function transformHtml(html, textStyles) {
 
   function addStyle(node, index) {
     if (node.type === 'tag' && Object.getOwnPropertyNames(node.attribs).length > 0) {
-      const nodeClass = transformClassnames(node.attribs.class); // could be undefined
-      node.style += node.attribs['data-style-portfolio'];
-      if( node.name === 'a') node.style = { ...node.style, ...textStyles.link };
+      let nodeClass = transformClassnames(node.attribs.class); // could be undefined
+      if( node.name === 'a') nodeClass = 'link';
+      if(node.attribs['data-style-portfolio']) node.style += node.attribs['data-style-portfolio'];
 
       const reactNode = Object.assign(convertNodeToElement(node, index, addStyle));
       let style = { ...textStyles[nodeClass], ...reactNode.props.style };

@@ -10906,8 +10906,8 @@ function transformHtml(html, textStyles) {
   function addStyle(node, index) {
     if (node.type === 'tag' && Object.getOwnPropertyNames(node.attribs).length > 0) {
       var nodeClass = transformClassnames(node.attribs.class); // could be undefined
-      node.style += node.attribs['data-style-portfolio'];
-      if (node.name === 'a') node.style = _extends({}, node.style, textStyles.link);
+      if (node.name === 'a') nodeClass = 'link';
+      if (node.attribs['data-style-portfolio']) node.style += node.attribs['data-style-portfolio'];
 
       var reactNode = Object.assign((0, _reactHtmlParser.convertNodeToElement)(node, index, addStyle));
       var style = _extends({}, textStyles[nodeClass], reactNode.props.style);
