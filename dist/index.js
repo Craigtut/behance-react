@@ -7200,7 +7200,7 @@ function renderProject(project) {
   });
   return _react2.default.createElement(
     'div',
-    { style: { background: processedStyles.background.color } },
+    { id: 'project-' + project.id, style: { background: processedStyles.background.color, color: processedStyles.text.paragraph.color } },
     modulesToRender
   );
 }
@@ -10905,8 +10905,10 @@ function transformHtml(html, textStyles) {
   function addStyle(node, index) {
     if (node.type === 'tag' && Object.getOwnPropertyNames(node.attribs).length > 0) {
       var nodeClass = transformClassnames(node.attribs.class); // could be undefined
+      node.style += node.attribs['data-style-portfolio'];
       var reactNode = Object.assign((0, _reactHtmlParser.convertNodeToElement)(node, index));
-      var style = _extends({}, reactNode.props.style, textStyles[nodeClass]);
+      var style = _extends({}, textStyles[nodeClass], reactNode.props.style);
+      if (node.name === 'div') style.display = 'block';
       var newStyledNode = _react2.default.cloneElement(reactNode, { style: style });
       return newStyledNode;
     }

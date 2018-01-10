@@ -21,7 +21,7 @@ export function renderProject(project) {
     }
   });
   return (
-    <div style={{ background: processedStyles.background.color }}>
+    <div id={`project-${project.id}`} style={{ background: processedStyles.background.color, color: processedStyles.text.paragraph.color }}>
       {modulesToRender}
     </div>
   );

@@ -7,8 +7,10 @@ export function transformHtml(html, textStyles) {
   function addStyle(node, index) {
     if (node.type === 'tag' && Object.getOwnPropertyNames(node.attribs).length > 0) {
       const nodeClass = transformClassnames(node.attribs.class); // could be undefined
+      node.style += node.attribs['data-style-portfolio'];
       const reactNode = Object.assign(convertNodeToElement(node, index));
-      var style = {...reactNode.props.style, ...textStyles[nodeClass]};
+      let style = { ...textStyles[nodeClass], ...reactNode.props.style };
+      if (node.name === 'div') style.display = 'block';
       const newStyledNode = React.cloneElement(reactNode, {style});
       return newStyledNode;
     }
