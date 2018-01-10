@@ -10907,11 +10907,13 @@ function transformHtml(html, textStyles) {
     if (node.type === 'tag' && Object.getOwnPropertyNames(node.attribs).length > 0) {
       var nodeClass = transformClassnames(node.attribs.class); // could be undefined
       node.style += node.attribs['data-style-portfolio'];
+      if (node.name === 'a') node.style = _extends({}, node.style, textStyles.link);
+
       var reactNode = Object.assign((0, _reactHtmlParser.convertNodeToElement)(node, index, addStyle));
       var style = _extends({}, textStyles[nodeClass], reactNode.props.style);
       if (node.name === 'div') style.display = 'block';
-      var newStyledNode = _react2.default.cloneElement(reactNode, { style: style });
-      return newStyledNode;
+
+      return _react2.default.cloneElement(reactNode, { style: style });
     }
   }
 }
