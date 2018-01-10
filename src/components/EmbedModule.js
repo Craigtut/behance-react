@@ -9,9 +9,9 @@ class EmbedModule extends Component {
     const renderVideo = ReactHtmlParser(module.embed);
     if (module.full_bleed) {
       return (
-        <Container fluid style={styles.spacing.modules}>
+        <div style={styles.spacing.modules}>
           {renderVideo}
-        </Container>
+        </div>
       );
     }
     return (

@@ -9,9 +9,9 @@ class ImageModule extends Component {
     style.marginBottom = (style.marginBottom === 0) ? '-4px' : style.marginBottom;
     if (module.full_bleed) {
       return (
-        <Container fluid style={style}>
+        <div style={style}>
           <img src={module.sizes.max_1920} style={{ width: '100%' }} />
-        </Container>
+        </div>
       );
     }
     return (

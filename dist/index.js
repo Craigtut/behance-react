@@ -6999,8 +6999,8 @@ var ImageModule = function (_Component) {
       style.marginBottom = style.marginBottom === 0 ? '-4px' : style.marginBottom;
       if (module.full_bleed) {
         return _react2.default.createElement(
-          _reactGridSystem.Container,
-          { fluid: true, style: style },
+          'div',
+          { style: style },
           _react2.default.createElement('img', { src: module.sizes.max_1920, style: { width: '100%' } })
         );
       }
@@ -7142,8 +7142,8 @@ var VideoModule = function (_Component) {
       var renderVideo = (0, _reactHtmlParser2.default)(module.embed);
       if (module.full_bleed) {
         return _react2.default.createElement(
-          _reactGridSystem.Container,
-          { fluid: true, style: styles.spacing.modules },
+          'div',
+          { style: styles.spacing.modules },
           renderVideo
         );
       }
@@ -13013,8 +13013,8 @@ var EmbedModule = function (_Component) {
       var renderVideo = (0, _reactHtmlParser2.default)(module.embed);
       if (module.full_bleed) {
         return _react2.default.createElement(
-          _reactGridSystem.Container,
-          { fluid: true, style: styles.spacing.modules },
+          'div',
+          { style: styles.spacing.modules },
           renderVideo
         );
       }
