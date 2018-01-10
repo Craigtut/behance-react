@@ -6995,17 +6995,18 @@ var ImageModule = function (_Component) {
           module = _props.module,
           styles = _props.styles;
 
-      console.log(module);
+      var style = styles.spaceing.modules;
+      style.marginBottom = '-4px';
       if (module.full_bleed) {
         return _react2.default.createElement(
           'div',
-          { fluid: true, style: styles.spacing.modules },
+          { fluid: true, style: style },
           _react2.default.createElement('img', { src: module.sizes.max_1920, style: { width: '100%' } })
         );
       }
       return _react2.default.createElement(
         'div',
-        { style: _extends({}, styles.spacing.modules, { padding: '0 10%' }) },
+        { style: _extends({}, style, { padding: '0 10%' }) },
         _react2.default.createElement('img', { src: module.sizes.max_1920, style: { width: '100%' } })
       );
     }
@@ -7200,7 +7201,7 @@ function renderProject(project) {
   });
   return _react2.default.createElement(
     'div',
-    { id: 'project-' + project.id, style: { background: processedStyles.background.color, color: processedStyles.text.paragraph.color } },
+    { id: 'project-' + project.id, style: { background: '#' + processedStyles.background.color, color: processedStyles.text.paragraph.color } },
     modulesToRender
   );
 }
