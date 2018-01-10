@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Container } from 'react-grid-system';
 import ReactHtmlParser from 'react-html-parser';
 
-class VideoModule extends Component {
+class EmbedModule extends Component {
   render() {
     const { module, styles } = this.props;
     const renderVideo = ReactHtmlParser(module.embed);
@@ -22,8 +22,8 @@ class VideoModule extends Component {
   }
 }
 
-VideoModule.propTypes = {
+EmbedModule.propTypes = {
   module: PropTypes.object,
 };
 
-export default VideoModule;
+export default EmbedModule;

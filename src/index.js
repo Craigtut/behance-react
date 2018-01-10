@@ -3,6 +3,7 @@ import { reactifyStyles } from './helpers.js';
 import ImageModule from './components/ImageModule';
 import TextModule from './components/TextModule';
 import VideoModule from './components/VideoModule';
+import EmbedModule from './components/EmbedModule';
 
 export function renderProject(project) {
   console.log('Here is project data', project)
@@ -16,6 +17,8 @@ export function renderProject(project) {
        return <ImageModule module={module} styles={processedStyles} />
       case 'video':
         return <VideoModule module={module} styles={processedStyles} />
+      case 'embed':
+        return <EmbedModule module={module} styles={processedStyles} />
       default:
         return null;
     }

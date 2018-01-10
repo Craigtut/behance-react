@@ -7123,16 +7123,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var TextModule = function (_Component) {
-  _inherits(TextModule, _Component);
+var VideoModule = function (_Component) {
+  _inherits(VideoModule, _Component);
 
-  function TextModule() {
-    _classCallCheck(this, TextModule);
+  function VideoModule() {
+    _classCallCheck(this, VideoModule);
 
-    return _possibleConstructorReturn(this, (TextModule.__proto__ || Object.getPrototypeOf(TextModule)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (VideoModule.__proto__ || Object.getPrototypeOf(VideoModule)).apply(this, arguments));
   }
 
-  _createClass(TextModule, [{
+  _createClass(VideoModule, [{
     key: 'render',
     value: function render() {
       var _props = this.props,
@@ -7155,14 +7155,14 @@ var TextModule = function (_Component) {
     }
   }]);
 
-  return TextModule;
+  return VideoModule;
 }(_react.Component);
 
-TextModule.propTypes = {
+VideoModule.propTypes = {
   module: _propTypes2.default.object
 };
 
-exports.default = TextModule;
+exports.default = VideoModule;
 
 /***/ }),
 /* 40 */
@@ -7194,6 +7194,10 @@ var _VideoModule = __webpack_require__(39);
 
 var _VideoModule2 = _interopRequireDefault(_VideoModule);
 
+var _EmbedModule = __webpack_require__(121);
+
+var _EmbedModule2 = _interopRequireDefault(_EmbedModule);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function renderProject(project) {
@@ -7208,6 +7212,8 @@ function renderProject(project) {
         return _react2.default.createElement(_ImageModule2.default, { module: module, styles: processedStyles });
       case 'video':
         return _react2.default.createElement(_VideoModule2.default, { module: module, styles: processedStyles });
+      case 'embed':
+        return _react2.default.createElement(_EmbedModule2.default, { module: module, styles: processedStyles });
       default:
         return null;
     }
@@ -12952,6 +12958,82 @@ var visible = exports.visible = function visible(_ref) {
 };
 
 exports.default = visible;
+
+/***/ }),
+/* 121 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(16);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _reactGridSystem = __webpack_require__(115);
+
+var _reactHtmlParser = __webpack_require__(75);
+
+var _reactHtmlParser2 = _interopRequireDefault(_reactHtmlParser);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var EmbedModule = function (_Component) {
+  _inherits(EmbedModule, _Component);
+
+  function EmbedModule() {
+    _classCallCheck(this, EmbedModule);
+
+    return _possibleConstructorReturn(this, (EmbedModule.__proto__ || Object.getPrototypeOf(EmbedModule)).apply(this, arguments));
+  }
+
+  _createClass(EmbedModule, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          module = _props.module,
+          styles = _props.styles;
+
+      var renderVideo = (0, _reactHtmlParser2.default)(module.embed);
+      if (module.full_bleed) {
+        return _react2.default.createElement(
+          _reactGridSystem.Container,
+          { fluid: true, style: styles.spacing.modules },
+          renderVideo
+        );
+      }
+      return _react2.default.createElement(
+        _reactGridSystem.Container,
+        { style: styles.spacing.modules },
+        renderVideo
+      );
+    }
+  }]);
+
+  return EmbedModule;
+}(_react.Component);
+
+EmbedModule.propTypes = {
+  module: _propTypes2.default.object
+};
+
+exports.default = EmbedModule;
 
 /***/ })
 /******/ ]);
