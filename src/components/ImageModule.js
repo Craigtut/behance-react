@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class ImageModule extends Component {
   render() {
     const { module, styles } = this.props;
-    const style = styles.spaceing.modules;
+    const style = styles.spacing.modules;
     style.marginBottom = '-4px';
     if (module.full_bleed) {
       return (
