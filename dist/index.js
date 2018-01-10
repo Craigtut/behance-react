@@ -12994,6 +12994,22 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var embedStyle = {
+  position: 'absolute',
+  top: 0,
+  width: '100%',
+  height: '100%'
+};
+var videoContainerStyle = {
+  paddingTop: '56.25%',
+  height: 0,
+  position: 'relative'
+};
+var containerStyle = {
+  maxHeight: '100%',
+  maxWidth: '100%'
+};
+
 var EmbedModule = function (_Component) {
   _inherits(EmbedModule, _Component);
 
@@ -13010,18 +13026,27 @@ var EmbedModule = function (_Component) {
           module = _props.module,
           styles = _props.styles;
 
-      var renderVideo = (0, _reactHtmlParser2.default)(module.embed);
+      var renderEmbed = (0, _reactHtmlParser2.default)(module.embed);
       if (module.full_bleed) {
+        renderEmbed = _react2.default.cloneElement(renderEmbed[0], { style: embedStyle });
         return _react2.default.createElement(
           'div',
           { style: styles.spacing.modules },
-          renderVideo
+          _react2.default.createElement(
+            'div',
+            { style: containerStyle },
+            _react2.default.createElement(
+              'div',
+              { style: videoContainerStyle },
+              renderEmbed
+            )
+          )
         );
       }
       return _react2.default.createElement(
         _reactGridSystem.Container,
         { style: styles.spacing.modules },
-        renderVideo
+        renderEmbed
       );
     }
   }]);
