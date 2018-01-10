@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 class ImageModule extends Component {
   render() {
     const { module, styles } = this.props;
-    const style = styles.spacing.modules;
-    style.marginBottom = '-4px';
+    const style = Object.assign({}, styles.spacing.modules);
+    style.marginBottom = (style.marginBottom === 0) ? '-4px' : style.marginBottom;
     if (module.full_bleed) {
       return (
         <div fluid style={style}>

@@ -6995,8 +6995,8 @@ var ImageModule = function (_Component) {
           module = _props.module,
           styles = _props.styles;
 
-      var style = styles.spacing.modules;
-      style.marginBottom = '-4px';
+      var style = Object.assign({}, styles.spacing.modules);
+      style.marginBottom = style.marginBottom === 0 ? '-4px' : style.marginBottom;
       if (module.full_bleed) {
         return _react2.default.createElement(
           'div',
