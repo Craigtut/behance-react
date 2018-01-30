@@ -9,22 +9,23 @@ export function renderProject(project) {
   console.log('Here is project data', project)
   const modules = project.modules;
   const processedStyles = reactifyStyles(project.styles);
-  const modulesToRender = modules.map((module) => {
+  const modulesToRender = modules.map((module, index) => {
+    const key = `${project.id}-module-${index}`;
     switch (module.type) {
       case 'text':
-        return <TextModule module={module} styles={processedStyles} />
+        return <TextModule key={key} module={module} styles={processedStyles} />
       case 'image':
-       return <ImageModule module={module} styles={processedStyles} />
+       return <ImageModule key={key} module={module} styles={processedStyles} />
       case 'video':
-        return <VideoModule module={module} styles={processedStyles} />
+        return <VideoModule key={key} module={module} styles={processedStyles} />
       case 'embed':
-        return <EmbedModule module={module} styles={processedStyles} />
+        return <EmbedModule key={key} module={module} styles={processedStyles} />
       default:
         return null;
     }
   });
   return (
-    <div id={`project-${project.id}`} style={{ background: `#${processedStyles.background.color}`, color: processedStyles.text.paragraph.color }}>
+    <div id={`project-${project.id}`} key={`project-${project.id}`} style={{ background: `#${processedStyles.background.color}`, color: processedStyles.text.paragraph.color }}>
       {modulesToRender}
     </div>
   );
