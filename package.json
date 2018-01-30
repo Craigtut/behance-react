@@ -1,6 +1,6 @@
 {
     "name": "behance-react",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Easily render behance projects using react",
     "repository": {
         "type": "git",
