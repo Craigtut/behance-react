@@ -4,9 +4,10 @@ import ImageModule from './components/ImageModule';
 import TextModule from './components/TextModule';
 import VideoModule from './components/VideoModule';
 import EmbedModule from './components/EmbedModule';
+import CollectionModule from './components/CollectionModule';
 
 export function renderProject(project) {
-  console.log('Here is project data', project)
+  console.log('Here is project data test', project)
   const modules = project.modules;
   const processedStyles = reactifyStyles(project.styles);
   const modulesToRender = modules.map((module, index) => {
@@ -16,6 +17,8 @@ export function renderProject(project) {
         return <TextModule key={key} module={module} styles={processedStyles} />
       case 'image':
        return <ImageModule key={key} module={module} styles={processedStyles} />
+      case 'media_collection':
+        return <CollectionModule key={key} module={module} styles={processedStyles} />
       case 'video':
         return <VideoModule key={key} module={module} styles={processedStyles} />
       case 'embed':
