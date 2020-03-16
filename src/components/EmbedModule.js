@@ -36,7 +36,7 @@ class EmbedModule extends Component {
       );
     }
     return (
-      <Container style={styles.spacing.modules}>
+      <Container style={{...styles.spacing.modules, display: 'flex', justifyContent: 'center'}}>
         {renderEmbed}
       </Container>
     );
